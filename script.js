@@ -3,11 +3,11 @@
 // Sorting: first by points (desc), then by nrr (desc).
 
 const teams = [
-  {name: 'Arabian Kings', matches:0, wins:0, losses:0, points:0, nrr:0.00},
-  {name: 'Knight Riders', matches:0, wins:0, losses:0, points:0, nrr:0.00},
+  {name: 'Arabian Kings', matches:2, wins:1, losses:1, points:2, nrr:+0.372},
+  {name: 'Knight Riders', matches:1, wins:1, losses:0, points:2, nrr:+1.525},
   {name: 'Flying Falcon', matches:1, wins:0, losses:1, points:0, nrr:-0.31},
   {name: 'Power Heaters', matches:1, wins:1, losses:0, points:2, nrr:+0.31},
-  {name: 'All-round Royals', matches:0, wins:0, losses:0, points:0, nrr:0.00}
+  {name: 'All-round Royals', matches:1, wins:0, losses:1, points:0, nrr:–1.897}
 ];
 
 function renderTable(){
