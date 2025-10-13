@@ -12,14 +12,15 @@ function renderTable(){
   const tbody = document.getElementById('tableBody');
   tbody.innerHTML = '';
 
+  // ✅ Sorting Rules (International Standard):
   teams.sort((a, b) => {
-    // 1️⃣ Points
+    // 1️⃣ Points (Highest First)
     if (b.points !== a.points) return b.points - a.points;
-    // 2️⃣ NRR
+    // 2️⃣ NRR (Highest First)
     if (b.nrr !== a.nrr) return b.nrr - a.nrr;
-    // 3️⃣ Wins
+    // 3️⃣ Wins (More Wins First)
     if (b.wins !== a.wins) return b.wins - a.wins;
-    // 4️⃣ Matches (কম ম্যাচ খেলে ভালো করলে আগে)
+    // 4️⃣ Matches (Fewer Matches First)
     return a.matches - b.matches;
   });
 
