@@ -1,10 +1,10 @@
 // International-style team ranking system
 
 const teams = [
-  {name:'Arabian Kings', matches:3, wins:2, losses:1, points:4, nrr:+0.839},
+  {name:'Arabian Kings', matches:4, wins:3, losses:1, points:6, nrr:+1.239},
   {name:'Knight Riders', matches:2, wins:2, losses:0, points:4, nrr:+1.941},
   {name:'Flying Falcon', matches:2, wins:0, losses:2, points:0, nrr:-0.777},
-  {name:'Power Heaters', matches:1, wins:1, losses:0, points:2, nrr:+0.31},
+  {name:'Power Heaters', matches:2, wins:1, losses:1, points:2, nrr:-0.09},
   {name:'All-round Royals', matches:2, wins:0, losses:2, points:0, nrr:-2.313}
 ];
 
