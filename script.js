@@ -1,4 +1,4 @@
-// International-style team ranking system
+// ✅ International-style team ranking system (Updated)
 
 const teams = [
   {name:'Arabian Kings', matches:5, wins:3, losses:2, points:6, nrr:+0.364},
@@ -12,27 +12,29 @@ function renderTable(){
   const tbody = document.getElementById('tableBody');
   tbody.innerHTML = '';
 
-  // ✅ Sorting Rules (International Standard):
+  // ✅ ICC / IPL Standard Sorting:
   teams.sort((a, b) => {
-    // 1️⃣ Points (Highest First)
+    // 1️⃣ Points (High → Low)
     if (b.points !== a.points) return b.points - a.points;
-    // 2️⃣ NRR (Highest First)
+    // 2️⃣ NRR (High → Low)
     if (b.nrr !== a.nrr) return b.nrr - a.nrr;
-    // 3️⃣ Wins (More Wins First)
+    // 3️⃣ Wins (High → Low)
     if (b.wins !== a.wins) return b.wins - a.wins;
-    // 4️⃣ Matches (Fewer Matches First)
+    // 4️⃣ Matches (Low → High)
     return a.matches - b.matches;
   });
 
   teams.forEach((t, i) => {
     const tr = document.createElement('tr');
-    tr.innerHTML = `<td>${i+1}</td>
+    tr.innerHTML = `
+      <td>${i+1}</td>
       <td>${t.name}</td>
       <td>${t.matches}</td>
       <td>${t.wins}</td>
       <td>${t.losses}</td>
       <td>${t.points}</td>
-      <td>${t.nrr>=0? '+'+t.nrr.toFixed(2): t.nrr.toFixed(2)}</td>`;
+      <td>${t.nrr >= 0 ? '+' + t.nrr.toFixed(3) : t.nrr.toFixed(3)}</td>
+    `;
     tbody.appendChild(tr);
   });
 }
