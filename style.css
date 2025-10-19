@@ -1,17 +1,101 @@
-:root{--bg:#04110a;--accent:#05e08c;--card:#07220f}
-*{box-sizing:border-box}
-body{margin:0;font-family:'Noto Sans Bengali',sans-serif;background:linear-gradient(180deg,var(--bg),#062413);color:#eafaf1;min-height:100vh}
-.hero{display:flex;gap:12px;align-items:center;padding:18px;background:linear-gradient(90deg, rgba(0,0,0,0.25), rgba(255,255,255,0.02));}
-.logo{width:84px;height:84px;border-radius:12px;box-shadow:0 8px 30px rgba(0,0,0,0.6);background:#fff;padding:6px}
-.title h1{margin:0;font-size:1.05rem;color:var(--accent)}
-.title p{margin:4px 0 0;font-size:0.85rem;color:rgba(255,255,255,0.75)}
-.container{padding:14px;max-width:980px;margin:0 auto}
-.card{background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(0,0,0,0.06));padding:12px;border-radius:12px;border:1px solid rgba(255,255,255,0.04)}
-.table-wrap{overflow:auto}
-table{width:100%;border-collapse:collapse}
-th,td{padding:10px;text-align:center;border-bottom:1px solid rgba(255,255,255,0.04);font-size:0.95rem}
-th{background:rgba(0,0,0,0.25);color:var(--accent)}
-tbody tr:nth-child(even){background:linear-gradient(90deg, rgba(255,255,255,0.02), transparent)}
-.note{margin-top:10px;color:rgba(255,255,255,0.7);font-size:0.9rem}
-footer{text-align:center;padding:12px;font-size:13px;color:rgba(255,255,255,0.6);margin-top:8px}
-@media(max-width:600px){.title h1{font-size:1rem}th,td{padding:8px;font-size:0.9rem}}
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f5f6fa;
+}
+
+.hero {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  background: #ff4f00;
+  color: #fff;
+  padding: 15px;
+}
+
+.hero .logo {
+  width: 60px;
+  height: 60px;
+}
+
+.title h1 {
+  margin: 0;
+  font-size: 20px;
+}
+
+.title p {
+  margin: 0;
+  font-size: 14px;
+}
+
+.container {
+  padding: 20px;
+}
+
+.card {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+  overflow: hidden;
+}
+
+.table-title {
+  text-align: center;
+  background: #ff4f00;
+  color: #fff;
+  margin: 0;
+  padding: 15px;
+  font-size: 20px;
+  border-radius: 12px 12px 0 0;
+}
+
+.table-wrap {
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: center;
+  font-size: 14px;
+}
+
+thead {
+  background: #1a237e;
+  color: white;
+}
+
+thead th {
+  padding: 10px 5px;
+}
+
+tbody td {
+  padding: 10px 5px;
+  border-bottom: 1px solid #ddd;
+}
+
+tbody tr:nth-child(even) {
+  background: #f7f7f7;
+}
+
+tbody tr td:first-child {
+  color: #ff4f00;
+  font-weight: bold;
+}
+
+.note {
+  text-align: center;
+  padding: 15px;
+  font-size: 15px;
+}
+
+footer {
+  text-align: center;
+  padding: 10px;
+  background: #ddd;
+  margin-top: 20px;
+}
+
+td:nth-child(7) {
+  width: 70px; /* ✅ NRR ছোট করে দেখা যায় */
+}
