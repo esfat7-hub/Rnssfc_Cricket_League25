@@ -9,7 +9,7 @@ body {
   align-items: center;
   gap: 15px;
   background: #ff4f00;
-  color: #fff;
+  color: #fff;6
   padding: 15px;
 }
 
@@ -103,6 +103,6 @@ td:nth-child(7) {
   width: 100px;
   height: 100px;
   object-fit: contain;
-  margin-right: 15px;
+  margin-right: 8px;
   vertical-align: middle;
 }
