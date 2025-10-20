@@ -1,6 +1,6 @@
 const teams = [
   {
-    name: 'Arabian Kings',
+    name: 'AK',
     logo: 'logos/arabian-kings.png',
     matches: 5,
     wins: 3,
@@ -9,7 +9,7 @@ const teams = [
     nrr: +0.364
   },
   {
-    name: 'Knight Riders',
+    name: 'KR',
     logo: 'logos/knight-riders.png',
     matches: 3,
     wins: 2,
@@ -18,7 +18,7 @@ const teams = [
     nrr: +1.378
   },
   {
-    name: 'Flying Falcon',
+    name: 'FF',
     logo: 'logos/flying-falcon.png',
     matches: 4,
     wins: 2,
@@ -27,7 +27,7 @@ const teams = [
     nrr: +0.450
   },
   {
-    name: 'Power Heaters',
+    name: 'PH',
     logo: 'logos/power-heaters.png',
     matches: 3,
     wins: 2,
@@ -36,7 +36,7 @@ const teams = [
     nrr: +0.554
   },
   {
-    name: 'All-round Royals',
+    name: 'ARR',
     logo: 'logos/all-round-royals.png',
     matches: 3,
     wins: 0,
