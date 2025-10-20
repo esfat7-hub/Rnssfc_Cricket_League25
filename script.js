@@ -1,11 +1,52 @@
 const teams = [
-  {name:'Arabian Kings', matches:5, wins:3, losses:2, points:6, nrr:+0.364},
-  {name:'Knight Riders', matches:3, wins:2, losses:1, points:4, nrr:+1.378},
-  {name:'Power Heaters', matches:3, wins:2, losses:1, points:4, nrr:+0.554},
-  {name:'Flying Falcon', matches:4, wins:2, losses:2, points:4, nrr:+0.450},
-  {name:'All-round Royals', matches:3, wins:0, losses:3, points:0, nrr:-2.665}
+  {
+    name: 'Arabian Kings',
+    logo: 'logos/arabian-kings.png',
+    matches: 5,
+    wins: 3,
+    losses: 2,
+    points: 6,
+    nrr: +0.364
+  },
+  {
+    name: 'Knight Riders',
+    logo: 'logos/knight-riders.png',
+    matches: 3,
+    wins: 2,
+    losses: 1,
+    points: 4,
+    nrr: +1.378
+  },
+  {
+    name: 'Flying Falcon',
+    logo: 'logos/flying-falcon.png',
+    matches: 4,
+    wins: 2,
+    losses: 2,
+    points: 4,
+    nrr: +0.450
+  },
+  {
+    name: 'Power Heaters',
+    logo: 'logos/power-heaters.png',
+    matches: 3,
+    wins: 2,
+    losses: 1,
+    points: 4,
+    nrr: +0.554
+  },
+  {
+    name: 'All-round Royals',
+    logo: 'logos/all-round-royals.png',
+    matches: 3,
+    wins: 0,
+    losses: 3,
+    points: 0,
+    nrr: -2.665
+  }
 ];
 
+// Rendering the table
 function renderTable() {
   const tbody = document.getElementById('tableBody');
   tbody.innerHTML = '';
@@ -20,8 +61,8 @@ function renderTable() {
   teams.forEach((t, i) => {
     const tr = document.createElement('tr');
     tr.innerHTML = `
-      <td>${i+1}</td>
-      <td>${t.name}</td>
+      <td>${i + 1}</td>
+      <td><img src="${t.logo}" class="team-logo" /> ${t.name}</td>
       <td>${t.matches}</td>
       <td>${t.wins}</td>
       <td>${t.losses}</td>
