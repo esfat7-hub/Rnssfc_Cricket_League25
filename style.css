@@ -1,102 +1,85 @@
 body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+  color: #fff;
   margin: 0;
-  font-family: Arial, sans-serif;
-  background: #f5f6fa;
+  padding: 0;
+  text-align: center;
 }
 
 .hero {
+  background: #ff4500;
+  color: white;
   display: flex;
   align-items: center;
-  gap: 15px;
-  background: #ff4f00;
-  color: #fff;6
-  padding: 15px;
+  justify-content: center;
+  padding: 10px;
+  gap: 10px;
 }
 
-.hero .logo {
-  width: 60px;
+.logo {
   height: 60px;
+  border-radius: 8px;
 }
 
 .title h1 {
   margin: 0;
   font-size: 20px;
 }
-
 .title p {
   margin: 0;
   font-size: 14px;
 }
 
 .container {
-  padding: 20px;
-}
-
-.card {
-  background: #fff;
-  border-radius: 12px;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
-  overflow: hidden;
+  margin: 30px auto;
+  width: 90%;
+  max-width: 800px;
 }
 
 .table-title {
-  text-align: center;
-  background: #ff4f00;
-  color: #fff;
-  margin: 0;
-  padding: 15px;
-  font-size: 20px;
-  border-radius: 12px 12px 0 0;
+  background: linear-gradient(90deg, #ff4500, #ff0066);
+  padding: 12px;
+  border-radius: 10px 10px 0 0;
+  color: white;
+  text-transform: uppercase;
 }
 
 .table-wrap {
-  overflow-x: auto;
+  background: #ffffff15;
+  border-radius: 0 0 10px 10px;
+  overflow: hidden;
 }
 
 table {
   width: 100%;
   border-collapse: collapse;
-  text-align: center;
-  font-size: 14px;
 }
 
 thead {
-  background: #1a237e;
-  color: white;
+  background: #0b3d91;
+  color: #fff;
 }
 
-thead th {
-  padding: 10px 5px;
-}
-
-tbody td {
-  padding: 10px 5px;
-  border-bottom: 1px solid #ddd;
-}
-
-tbody tr:nth-child(even) {
-  background: #f7f7f7;
-}
-
-tbody tr td:first-child {
-  color: #ff4f00;
-  font-weight: bold;
-}
-
-.note {
+th, td {
+  padding: 10px;
   text-align: center;
-  padding: 15px;
   font-size: 15px;
 }
 
+tbody tr:nth-child(1) { background: #ff5722; font-weight: bold; }
+tbody tr:nth-child(2) { background: #9c27b0; }
+tbody tr:nth-child(3) { background: #3f51b5; }
+tbody tr:nth-child(4) { background: #009688; }
+tbody tr:nth-child(5) { background: #ffeb3b; color: #000; }
+
+tbody tr:nth-child(even) {
+  filter: brightness(1.1);
+}
+
 footer {
-  text-align: center;
-  padding: 10px;
-  background: #ddd;
-  margin-top: 20px;
+  background: #111;
+  color: #bbb;
+  padding: 8px;
+  font-size: 13px;
 }
-
-td:nth-child(7) {
-  width: 70px; /* ✅ NRR ছোট করে দেখা যায় */
-}
-
