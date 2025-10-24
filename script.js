@@ -19,7 +19,7 @@ function renderTable() {
     return a.matches - b.matches;
   });
 
-  // Render rows with Q badge for top 4 teams
+  // Render rows with Q badge for top 1 teams
   teams.forEach((t, i) => {
     const tr = document.createElement('tr');
     tr.style.background = `linear-gradient(90deg, ${t.color}, rgba(0,0,0,0.4))`;
