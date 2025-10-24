@@ -1,106 +1,51 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
-
 body {
-  margin: 0;
-  padding: 0;
-  font-family: 'Poppins', sans-serif;
-  background: linear-gradient(135deg, #001f3f, #004aad, #280a7c);
+  font-family: Arial, sans-serif;
+  background: #0a0f24;
   color: white;
   text-align: center;
-  min-height: 100vh;
+  margin: 0;
 }
 
 .hero {
-  padding: 20px;
-  background: rgba(255, 255, 255, 0.05);
-  backdrop-filter: blur(10px);
-  border-bottom: 1px solid rgba(255,255,255,0.2);
+  background: #142850;
+  padding: 15px;
+  border-bottom: 3px solid #0096ff;
 }
 
-.hero h1 {
-  font-size: 22px;
-  margin: 0;
-  color: #ffeb3b;
+.container {
+  width: 95%;
+  margin: auto;
 }
 
-.hero p {
-  margin: 5px 0;
-  font-size: 14px;
-  opacity: 0.8;
-}
-
-.table-section {
-  margin: 30px auto;
-  width: 90%;
-  max-width: 700px;
-}
-
-.glass {
-  background: rgba(255, 255, 255, 0.1);
-  border-radius: 15px;
-  padding: 20px;
-  box-shadow: 0 0 20px rgba(0,0,0,0.3);
-  backdrop-filter: blur(20px);
-}
-
-h2 {
-  margin-bottom: 10px;
-  color: #ffdf00;
-  text-shadow: 1px 1px 4px black;
+.card {
+  background: #1a1f38;
+  margin-top: 20px;
+  padding: 10px;
+  border-radius: 10px;
+  overflow-x: auto;
 }
 
 table {
   width: 100%;
   border-collapse: collapse;
-  overflow: hidden;
-  border-radius: 10px;
-}
-
-th, td {
-  padding: 10px;
-  text-align: center;
 }
 
 th {
-  background: rgba(0,0,0,0.3);
-  text-transform: uppercase;
-  letter-spacing: 1px;
+  background: #0096ff;
+  padding: 10px;
 }
 
 td {
-  font-weight: 500;
-}
-
-tr {
-  transition: transform 0.2s ease;
-}
-
-tr:hover {
-  transform: scale(1.02);
-  background: rgba(255,255,255,0.15);
-}
-
-.q-badge {
-  background: #00ff87;
-  color: black;
-  font-size: 12px;
-  font-weight: bold;
-  padding: 2px 6px;
-  border-radius: 6px;
-  margin-left: 6px;
-}
-
-.footer-note {
-  margin-top: 15px;
-  font-size: 14px;
-  color: #ffeb3b;
-  text-shadow: 1px 1px 2px black;
-}
-
-footer {
   padding: 10px;
-  font-size: 13px;
-  background: rgba(0,0,0,0.3);
-  border-top: 1px solid rgba(255,255,255,0.2);
-  margin-top: 30px;
+  font-size: 14px;
+}
+
+tr:nth-child(even) {
+  background: #243b55;
+}
+
+tfoot, footer {
+  margin-top: 20px;
+  font-size: 12px;
+  opacity: 0.7;
 }
