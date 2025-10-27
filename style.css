@@ -1,51 +1,58 @@
-body {
-  font-family: Arial, sans-serif;
-  background: #0a0f24;
-  color: white;
-  text-align: center;
-  margin: 0;
+/* Simple IPL-ish dark theme */
+:root{
+  --bg-1: #071126;
+  --card: rgba(255,255,255,0.03);
+  --accent: #ff7a00;
+  --head: #0b3d91;
+  --text: #eef6ff;
+  --muted: #bfc8d9;
 }
 
-.hero {
-  background: #142850;
-  padding: 15px;
-  border-bottom: 3px solid #0096ff;
+*{box-sizing:border-box}
+body{
+  margin:0;
+  font-family: "Segoe UI", Roboto, "Noto Sans Bengali", sans-serif;
+  background: linear-gradient(180deg,var(--bg-1), #051428);
+  color: var(--text);
+  -webkit-font-smoothing:antialiased;
 }
 
-.container {
-  width: 95%;
-  margin: auto;
+.hero{
+  padding:14px;
+  text-align:center;
+  background: linear-gradient(90deg,var(--accent), #ff3d00);
+  color:#fff;
 }
+.hero p{margin:6px 0 0;font-size:13px;color:rgba(255,255,255,0.9)}
 
-.card {
-  background: #1a1f38;
-  margin-top: 20px;
-  padding: 10px;
-  border-radius: 10px;
-  overflow-x: auto;
+.container{max-width:980px;margin:20px auto;padding:0 12px}
+.card{background:var(--card);border-radius:12px;padding:14px;box-shadow:0 8px 30px rgba(0,0,0,0.4);border:1px solid rgba(255,255,255,0.02)}
+.table-wrap{overflow:auto}
+table{width:100%;border-collapse:collapse;font-size:14px}
+thead th{background:var(--head);color:#fff;padding:10px 8px;text-transform:uppercase;letter-spacing:0.6px}
+tbody td{padding:10px 8px;border-bottom:1px solid rgba(255,255,255,0.03);text-align:center}
+tbody tr:nth-child(even){background:rgba(255,255,255,0.02)}
+.rank-cell{font-weight:800;color:var(--accent)}
+.status-badge{
+  display:inline-block;
+  padding:4px 8px;
+  border-radius:8px;
+  font-weight:700;
+  font-size:12px;
 }
+.badge-locked{background:#00c853;color:#001}
+.badge-qualified{background:#00e676;color:#001}
+.badge-eliminated{background:#ff4d4f;color:#fff}
+.badge-playoff{background:#ffd166;color:#111}
+.badge-contending{background:#ffd966;color:#111}
+.live-info{margin:8px 0;padding:8px;background:rgba(255,255,255,0.02);border-radius:8px;color:var(--muted)}
 
-table {
-  width: 100%;
-  border-collapse: collapse;
-}
+.note{margin-top:12px;color:var(--muted);font-size:13px}
+footer{text-align:center;padding:12px;margin-top:14px;color:var(--muted);font-size:13px}
 
-th {
-  background: #0096ff;
-  padding: 10px;
-}
-
-td {
-  padding: 10px;
-  font-size: 14px;
-}
-
-tr:nth-child(even) {
-  background: #243b55;
-}
-
-tfoot, footer {
-  margin-top: 20px;
-  font-size: 12px;
-  opacity: 0.7;
+/* responsive */
+@media(max-width:720px){
+  thead th:nth-child(2), tbody td:nth-child(2){text-align:left;padding-left:8px}
+  table, .table-wrap{font-size:13px}
+  .hero h1{font-size:18px}
 }
