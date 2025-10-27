@@ -2,9 +2,9 @@
 const teams = [
   {name:'Arabian Kings', matches:8, wins:5, losses:3, points:10, nrr:-0.359},
   {name:'Knight Riders', matches:6, wins:5, losses:1, points:10, nrr:+8.572},
-  {name:'Flying Falcon', matches:6, wins:2, losses:4, points:4, nrr:-1.8863},
+  {name:'Flying Falcon', matches:7, wins:3, losses:4, points:6, nrr:-1.3863},
   {name:'Power Heaters', matches:7, wins:4, losses:3, points:8, nrr:-2.6947},
-  {name:'All-round Royals', matches:5, wins:0, losses:5, points:0, nrr:-3.529}
+  {name:'All-round Royals', matches:6, wins:0, losses:6, points:0, nrr:-4.029}
 ];
 
 function renderTable(){
