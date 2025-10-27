@@ -3,38 +3,43 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>IPL Style Points Table</title>
+  <title> Points Table & Qualification</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-
   <header class="hero">
-    <h2>POINTS TABLE</h2>
-    <p>Top 4 Teams Will Qualify for Playoffs</p>
+    <h1>রাজনগর নব শুভ সংঘ ক্লাব — Points & Qualification</h1>
+    
   </header>
 
   <main class="container">
     <section class="card">
-      <table id="rankingTable">
-        <thead>
-          <tr>
-            <th>#</th>
-            <th>Team</th>
-            <th>M</th>
-            <th>W</th>
-            <th>L</th>
-            <th>Pts</th>
-            <th>NRR</th>
-            <th>Q</th>
-          </tr>
-        </thead>
-        <tbody id="tableBody"></tbody>
-      </table>
+      <h2>Team Standings</h2>
+      <div id="liveInfo" class="live-info"></div>
+      <div class="table-wrap">
+        <table id="rankingTable">
+          <thead>
+            <tr>
+              <th>Rank</th>
+              <th>Team</th>
+              <th>M</th>
+              <th>W</th>
+              <th>L</th>
+              <th>Pts</th>
+              <th>NRR</th>
+              <th>Status</th>
+            </tr>
+          </thead>
+          <tbody id="tableBody"></tbody>
+        </table>
+      </div>
+
+      <p class="note">নোট: Pts = 2 × Wins (+1 for tie/no-result). Top 4 based on Points → NRR → Wins → Matches.</p>
     </section>
   </main>
 
-  <footer>© ২০২৫ রাজনগর নব শুভ সংঘ | Designed by ESFAT OFFICIAL</footer>
+  <footer>© ২০২৫ রাজনগর নব শুভ সংঘ</footer>
 
-<script src="script.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
