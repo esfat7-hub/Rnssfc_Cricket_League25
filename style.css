@@ -1,58 +1,72 @@
-/* Simple IPL-ish dark theme */
-:root{
-  --bg-1: #071126;
-  --card: rgba(255,255,255,0.03);
-  --accent: #ff7a00;
-  --head: #0b3d91;
-  --text: #eef6ff;
-  --muted: #bfc8d9;
+body {
+  background: #0a1a2f;
+  font-family: Arial, sans-serif;
+  color: white;
+  margin: 0;
 }
 
-*{box-sizing:border-box}
-body{
-  margin:0;
-  font-family: "Segoe UI", Roboto, "Noto Sans Bengali", sans-serif;
-  background: linear-gradient(180deg,var(--bg-1), #051428);
-  color: var(--text);
-  -webkit-font-smoothing:antialiased;
+.hero {
+  text-align: center;
+  background: linear-gradient(to right, #ff5f00, #ff8800);
+  padding: 15px;
+  color: #fff;
+  font-weight: bold;
 }
 
-.hero{
-  padding:14px;
-  text-align:center;
-  background: linear-gradient(90deg,var(--accent), #ff3d00);
-  color:#fff;
+.container { padding: 15px; }
+
+.table-card {
+  background: #081426;
+  border-radius: 10px;
+  padding: 15px;
 }
-.hero p{margin:6px 0 0;font-size:13px;color:rgba(255,255,255,0.9)}
 
-.container{max-width:980px;margin:20px auto;padding:0 12px}
-.card{background:var(--card);border-radius:12px;padding:14px;box-shadow:0 8px 30px rgba(0,0,0,0.4);border:1px solid rgba(255,255,255,0.02)}
-.table-wrap{overflow:auto}
-table{width:100%;border-collapse:collapse;font-size:14px}
-thead th{background:var(--head);color:#fff;padding:10px 8px;text-transform:uppercase;letter-spacing:0.6px}
-tbody td{padding:10px 8px;border-bottom:1px solid rgba(255,255,255,0.03);text-align:center}
-tbody tr:nth-child(even){background:rgba(255,255,255,0.02)}
-.rank-cell{font-weight:800;color:var(--accent)}
-.status-badge{
-  display:inline-block;
-  padding:4px 8px;
-  border-radius:8px;
-  font-weight:700;
-  font-size:12px;
+table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: center;
+  font-size: 15px;
 }
-.badge-locked{background:#00c853;color:#001}
-.badge-qualified{background:#00e676;color:#001}
-.badge-eliminated{background:#ff4d4f;color:#fff}
-.badge-playoff{background:#ffd166;color:#111}
-.badge-contending{background:#ffd966;color:#111}
-.live-info{margin:8px 0;padding:8px;background:rgba(255,255,255,0.02);border-radius:8px;color:var(--muted)}
 
-.note{margin-top:12px;color:var(--muted);font-size:13px}
-footer{text-align:center;padding:12px;margin-top:14px;color:var(--muted);font-size:13px}
+th {
+  background: #092044;
+  padding: 10px;
+  font-weight: 700;
+  color: #ffd;
+}
 
-/* responsive */
-@media(max-width:720px){
-  thead th:nth-child(2), tbody td:nth-child(2){text-align:left;padding-left:8px}
-  table, .table-wrap{font-size:13px}
-  .hero h1{font-size:18px}
+td {
+  padding: 10px;
+  border-bottom: 1px solid #113;
+}
+
+/* Status Badges */
+.status-badge {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  font-size: 14px;
+  font-weight: bold;
+  color: #fff;
+}
+
+.badge-qualified { background: #00c853; }   /* Green Q */
+.badge-eliminator { background: #2962ff; }  /* Blue E */
+.badge-eliminated { background: #d50000; }  /* Red X */
+.badge-contending { background: #ffab00; }  /* Yellow C */
+
+.note {
+  font-size: 13px;
+  opacity: .8;
+  margin-top: 15px;
+}
+
+footer {
+  text-align: center;
+  padding: 10px;
+  background: #000;
+  font-size: 13px;
 }
