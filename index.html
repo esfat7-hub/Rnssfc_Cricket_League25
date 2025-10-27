@@ -3,43 +3,44 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title> Points Table & Qualification</title>
+  <title> রাজনগর নভ শুভ সংঘ ক্লাব 
+ 						 		 Points Table </title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <header class="hero">
-    <h1>রাজনগর নব শুভ সংঘ ক্লাব — Points & Qualification</h1>
-    
-  </header>
 
-  <main class="container">
-    <section class="card">
-      <h2>Team Standings</h2>
-      <div id="liveInfo" class="live-info"></div>
-      <div class="table-wrap">
-        <table id="rankingTable">
-          <thead>
-            <tr>
-              <th>Rank</th>
-              <th>Team</th>
-              <th>M</th>
-              <th>W</th>
-              <th>L</th>
-              <th>Pts</th>
-              <th>NRR</th>
-              <th>Status</th>
-            </tr>
-          </thead>
-          <tbody id="tableBody"></tbody>
-        </table>
-      </div>
+<header class="hero">
+  <h1>Team Standings</h1>
+  <p>Matches completed: <span id="matchCount"></span></p>
+</header>
 
-      <p class="note">নোট: Pts = 2 × Wins (+1 for tie/no-result). Top 4 based on Points → NRR → Wins → Matches.</p>
-    </section>
-  </main>
+<main class="container">
+  <div class="table-card">
+    <table>
+      <thead>
+        <tr>
+          <th>ANK</th>
+          <th>TEAM</th>
+          <th>M</th>
+          <th>W</th>
+          <th>L</th>
+          <th>PTS</th>
+          <th>NRR</th>
+          <th>STATUS</th>
+        </tr>
+      </thead>
+      <tbody id="tableBody"></tbody>
+    </table>
 
-  <footer>© ২০২৫ রাজনগর নব শুভ সংঘ</footer>
+    <p class="note">
+      নোটঃ Pts = 2 × Wins (+1 tie/no-result)  
+      Top 4 → Q/E Based on Points → NRR → Wins → Matches
+    </p>
+  </div>
+</main>
 
-  <script src="script.js"></script>
+<footer>© ২০২৫ রাজনগর নব শুভ সংঘ</footer>
+
+<script src="script.js"></script>
 </body>
 </html>
