@@ -2,8 +2,8 @@ const TOTAL_MATCHES = 8;
 
 const teams = [
   {name:'Arabian Kings', matches:8, wins:5, losses:3, points:10, nrr:-0.359},
-  {name:'Knight Riders', matches:6, wins:5, losses:1, points:10, nrr:+8.572},
-  {name:'Flying Falcon', matches:7, wins:3, losses:4, points:6, nrr:-1.3863},
+  {name:'Knight Riders', matches:8, wins:6, losses:2, points:12, nrr:+8.983},
+  {name:'Flying Falcon', matches:8, wins:4, losses:4, points:8, nrr:-0.022},
   {name:'Power Heaters', matches:8, wins:4, losses:4, points:8, nrr:-3.462},
   {name:'All-round Royals', matches:8, wins:1, losses:7, points:2, nrr:-5.555}
 ];
